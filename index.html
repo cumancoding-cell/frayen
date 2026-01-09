@@ -1,1 +1,54 @@
 <DOCTYPE html>
+<html lang="id">
+<head>
+      <meta charset="UTF-8">
+      <title>ANIMASI SEDERHANA</title>
+      <style>
+
+      body {
+          dispay: flex;
+          justify-content:center;
+          align-items: center;
+          height: 100vh;
+          background: #f0f0f0;
+          }
+
+
+      .box {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          animation: gerak 3s infinite alternate;  
+          }
+
+      
+        @keyframes gerak {
+            0% {
+                transform: translateX(0);
+                background-color: red;
+            }
+            50% {
+                transform: translateX(150px);
+                background-color: blue;
+            }
+            100% {
+                transform: translateX(-150px);
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+  
